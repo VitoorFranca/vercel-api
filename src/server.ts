@@ -4,9 +4,13 @@ import dotenv from 'dotenv';
 import swaggerUi from 'swagger-ui-express';
 import { CurrencyRoutes } from './routes/CurrencyRoutes';
 import { SwaggerSpec } from './utils/swagger';
+import { RootRoutes } from './routes/Root';
+import { SlackRoutes } from './routes/Slack';
 
 const app: Application = express();
 
+const rootRoutes = new RootRoutes().getRoutes();
+const slackRoutes = new SlackRoutes().getRoutes();
 const currencyRoutes = new CurrencyRoutes().getRoutes();
 
 app.use(cors());
@@ -15,6 +19,8 @@ dotenv.config();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.use('/', rootRoutes);
+app.use('/v1', slackRoutes);
 app.use('/v1', currencyRoutes);
 
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(SwaggerSpec));
