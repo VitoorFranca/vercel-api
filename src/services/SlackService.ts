@@ -9,7 +9,7 @@ export class SlackService {
         baseURL:  "https://slack.com/api",
         headers: {
             'Content-Type': 'application/json',
-            Authorization: 'Bearer xoxb-6302536431154-6573962128836-Nj70ISnTvndfgwL5eueiWLUI'
+            Authorization: 'Bearer xoxp-6302536431154-6296635752214-6588262837425-1389f300eaa01cf71a72c45b936b1bc4'
     }});
   }
 
@@ -23,7 +23,7 @@ export class SlackService {
         {
             headers: {
                 'Content-Type': 'application/json',
-                Authorization: 'Bearer xoxb-6302536431154-6573962128836-Nj70ISnTvndfgwL5eueiWLUI'
+                Authorization: 'Bearer xoxp-6302536431154-6296635752214-6588262837425-1389f300eaa01cf71a72c45b936b1bc4'
             },
         }
         )
@@ -43,7 +43,7 @@ export class SlackService {
             {
                 headers: {
                     'Content-Type': 'application/json',
-                    Authorization: 'Bearer xoxb-6302536431154-6573962128836-Nj70ISnTvndfgwL5eueiWLUI'
+                    Authorization: 'Bearer xoxp-6302536431154-6296635752214-6588262837425-1389f300eaa01cf71a72c45b936b1bc4'
                 },
             }
             

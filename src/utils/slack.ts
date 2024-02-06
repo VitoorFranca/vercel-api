@@ -1,5 +1,5 @@
 export const modalPayload = {
-    "channel" : "C06J0U4JSSC",  
+    "channel" : "C06HZA7F91N",  
   "view": {
     "type": "modal",
     "callback_id": "modal-identifier",
