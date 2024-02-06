@@ -27,7 +27,7 @@ export class SlackController {
       console.log("request: " + result);
       res.status(200).json(result);
     } catch (error) {
-      console.log('Error open modal: ' + error )
+      console.log('Error send message: ' + error )
       res.status(400).json({ message: 'Error send message: ' + error });
     }
   }

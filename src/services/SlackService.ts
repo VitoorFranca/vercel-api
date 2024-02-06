@@ -2,20 +2,9 @@ import axios, { Axios } from "axios";
 import { buttonPayload, modalPayload } from "../utils/slack";
 
 export class SlackService {
-    client: Axios;
-
-  constructor() {
-    this.client = new axios.Axios({
-        baseURL:  "https://slack.com/api",
-        headers: {
-            'Content-Type': 'application/json',
-            Authorization: `Bearer ${process.env.SLACK_TOKEN}`
-    }});
-  }
 
   async sendMessage(options: any): Promise<object> {
-    try {
-        // console.log(options)
+    try {        
         const response = await axios.post("https://slack.com/api/chat.postMessage", {
             ...buttonPayload,
                 ...options
