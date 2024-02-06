@@ -29,9 +29,8 @@ export class SlackService {
         )
         console.log(response)
         return response;
-    } catch (error) {
-        console.log(error)
-      throw new Error('API Error');
+    } catch (error : any) {      
+      throw new Error('API Error: ' + error.message);
     }
   }
   async openModal(triggerId: string): Promise<object> {
@@ -51,8 +50,8 @@ export class SlackService {
             console.log(response)
       
       return response;
-    } catch (error) {
-      throw new Error('API Error');
+    } catch (error : any) {
+      throw new Error('API Error: ' + error.message);
     }
   }
 }
