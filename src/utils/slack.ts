@@ -1,5 +1,5 @@
 export const modalPayload = {
-    "channel" : "C06GXQ3CV7V",  
+    "channel" : "C06J0U4JSSC",  
   "view": {
     "type": "modal",
     "callback_id": "modal-identifier",
@@ -30,7 +30,7 @@ export const modalPayload = {
 }
 
 export const buttonPayload = {
-    "channel" : "C06GXQ3CV7V",    
+    "channel" : "C06J0U4JSSC",    
   "blocks": [
     {
       "type": "section",
