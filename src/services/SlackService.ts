@@ -35,7 +35,7 @@ export class SlackService {
   }
   async openModal(triggerId: string): Promise<object> {
       try {
-          const response = await this.client.post("https://slack.com/api/views.open", {
+          const response = await axios.post("https://slack.com/api/views.open", {
               ...modalPayload,
               trigger_id: triggerId
             },
