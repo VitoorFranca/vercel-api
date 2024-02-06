@@ -30,7 +30,7 @@ export const modalPayload = {
 }
 
 export const buttonPayload = {
-    "channel" : "C06J0U4JSSC",    
+    "channel" : "C06HZA7F91N",    
   "blocks": [
     {
       "type": "section",
