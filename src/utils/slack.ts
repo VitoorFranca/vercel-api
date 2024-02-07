@@ -4,7 +4,7 @@ export const modalPayload = {
     "type": "modal",
     "title": {
       "type": "plain_text",
-      "text": "Modal title"
+      "text": "Add Notes"
     },
     "blocks": [
       {
@@ -27,17 +27,14 @@ export const modalPayload = {
       },
       {
         "type": "input",
+        "block_id": "section2",
         "label": {
           "type": "plain_text",
-          "text": "Input label"
+          "text": "Note"
         },
         "element": {
           "type": "plain_text_input",
-          "action_id": "input1",
-          "placeholder": {
-            "type": "plain_text",
-            "text": "Type in here"
-          },
+          "action_id": "input_o1",          
           "multiline": true
         },
         "optional": false
@@ -48,12 +45,12 @@ export const modalPayload = {
       "text": "Cancel"
     },
     "submit": {
-      "type": "plain_text",
+      "type": "plain_text",      
+      "text": "Send"
       //"action_id": "submit_btn",
-      "text": "Save"
-    },
-    "private_metadata": "Shhhhhhhh",
-    "callback_id": "view_identifier_12"
+    }
+    // "private_metadata": "Shhhhhhhh",
+    // "callback_id": "view_identifier_12"
   }
 }
 
