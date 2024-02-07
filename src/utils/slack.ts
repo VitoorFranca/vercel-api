@@ -50,8 +50,8 @@ export const modalPayload = {
     },
     "submit": {
       "type": "plain_text",      
-      "text": "Send"
-      //"action_id": "submit_btn",
+      "text": "Send",
+      "action_id": "submit_button_modal"
     }
     // "private_metadata": "Shhhhhhhh",
     // "callback_id": "view_identifier_12"
