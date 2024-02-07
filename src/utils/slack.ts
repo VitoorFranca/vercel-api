@@ -2,26 +2,30 @@ export const modalPayload = {
     "channel" : "C06HEKLDR0A",  
   "view": {
     "type": "modal",
-    "callback_id": "modal-identifier",
+    //"callback_id": "modal-identifier",
     "title": {
       "type": "plain_text",
-      "text": "Just a modal"
+      "text": "Send Status Update"
     },
     "blocks": [
       {
-        "type": "section",
-        "block_id": "section-identifier",
-        "text": {
-          "type": "mrkdwn",
-          "text": "*Welcome* to ~my~ Block Kit _modal_!"
+        "type": "input",
+        "block_id": "input_status",
+        "element": {
+          "type": "plain_text_input",
+          "action_id": "input_action"
+        },
+        "label": {
+          "type": 'plain_text',
+          "text": 'Digite alguma coisa:'
         },
         "accessory": {
           "type": "button",
           "text": {
             "type": "plain_text",
-            "text": "Just a button"
+            "text": "Enviar"
           },
-          "action_id": "button-identifier"
+          "action_id": "submit_button"
         }
       }
     ]
