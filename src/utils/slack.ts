@@ -49,6 +49,7 @@ export const modalPayload = {
     },
     "submit": {
       "type": "plain_text",
+      "action_id": "submit_btn",
       "text": "Save"
     },
     "private_metadata": "Shhhhhhhh",
