@@ -8,7 +8,7 @@ export class SlackService {
     this.client = axios.create({
       baseURL: "https://slack.com/api/",
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json; charset=utf-8',
             Authorization: `Bearer ${process.env.SLACK_TOKEN}`
     }});
   }
