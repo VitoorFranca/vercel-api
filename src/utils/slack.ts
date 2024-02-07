@@ -37,7 +37,7 @@ export const modalPayload = {
           "action_id": "input_o1",  
           "placeholder": {
             "type": "plain_text",
-            "text": ""
+            "text": " "
           },        
           "multiline": true
         },
