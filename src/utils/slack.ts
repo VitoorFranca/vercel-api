@@ -1,40 +1,61 @@
 export const modalPayload = {
-    "channel" : "C06HEKLDR0A",  
-  "view": {
-    "type": "modal",
-    //"callback_id": "modal-identifier",
-    "title": {
-      "type": "plain_text",
-      "text": "Send Status Update"
-    },
-    "blocks": [
-      {
-        "type": "input",
-        "block_id": "input_status",
-        "element": {
-          "type": "plain_text_input",
-          "action_id": "input_action"
+  "channel": "C06HEKLDR0A",
+  "type": "modal",
+  "title": {
+    "type": "plain_text",
+    "text": "Modal title"
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "It's Block Kit...but _in a modal_"
+      },
+      "block_id": "section1",
+      "accessory": {
+        "type": "button",
+        "text": {
+          "type": "plain_text",
+          "text": "Click me"
         },
-        "label": {
-          "type": 'plain_text',
-          "text": 'Digite alguma coisa:'
-        },
-        "accessory": {
-          "type": "button",
-          "text": {
-            "type": "plain_text",
-            "text": "Enviar"
-          },
-          "action_id": "submit_button"
-        }
+        "action_id": "button_abc",
+        "value": "Button value",
+        "style": "danger"
       }
-    ]
-  }
-
+    },
+    {
+      "type": "input",
+      "label": {
+        "type": "plain_text",
+        "text": "Input label"
+      },
+      "element": {
+        "type": "plain_text_input",
+        "action_id": "input1",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "Type in here"
+        },
+        "multiline": false
+      },
+      "optional": false
+    }
+  ],
+  "close": {
+    "type": "plain_text",
+    "text": "Cancel"
+  },
+  "submit": {
+    "type": "plain_text",
+    "text": "Save"
+  },
+  "private_metadata": "Shhhhhhhh",
+  "callback_id": "view_identifier_12"
 }
 
 export const buttonPayload = {
-    "channel" : "C06HEKLDR0A",    
+  "channel": "C06HEKLDR0A",
   "blocks": [
     {
       "type": "section",
@@ -43,7 +64,7 @@ export const buttonPayload = {
         "text": "Clique no botão abaixo:"
       },
       "accessory": {
-                "value": "incidentId=15120",
+        "value": "incidentId=15120",
         "type": "button",
         "text": {
           "type": "plain_text",
