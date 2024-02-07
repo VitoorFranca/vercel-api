@@ -34,7 +34,11 @@ export const modalPayload = {
         },
         "element": {
           "type": "plain_text_input",
-          "action_id": "input_o1",          
+          "action_id": "input_o1",  
+          "placeholder": {
+            "type": "plain_text",
+            "text": ""
+          },        
           "multiline": true
         },
         "optional": false
