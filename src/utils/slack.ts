@@ -38,7 +38,7 @@ export const modalPayload = {
             "type": "plain_text",
             "text": "Type in here"
           },
-          "multiline": false
+          "multiline": true
         },
         "optional": false
       }
