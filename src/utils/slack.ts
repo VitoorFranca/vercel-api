@@ -1,7 +1,8 @@
 export const modalPayload = {
-  "channel": "C06HEKLDR0A",
+  //"channel": "C06HEKLDR0A",
   "view": {
     "type": "modal",
+    "callback_id": "modal-identifier",
     "title": {
       "type": "plain_text",
       "text": "Add Notes"
@@ -50,8 +51,7 @@ export const modalPayload = {
     },
     "submit": {
       "type": "plain_text",      
-      "text": "Send",
-      "action_id": "submit_button_modal"
+      "text": "Send"      
     }
     // "private_metadata": "Shhhhhhhh",
     // "callback_id": "view_identifier_12"
