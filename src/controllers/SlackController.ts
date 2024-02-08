@@ -11,7 +11,7 @@ export class SlackController {
   async openModal(req: Request, res: Response): Promise<void> {
     try {
       const payload = JSON.parse(req.body.payload)
-      console.log("requisição completa: " + JSON.parse(req.body))
+      console.log("requisição completa: " + req.body)
       console.log("payload " + JSON.stringify(payload))
       console.log("payload/trigger_id open modal: " + payload.trigger_id)
 
