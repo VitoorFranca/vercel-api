@@ -1,45 +1,26 @@
 export const modalPayload = {
-  //"channel": "C06HEKLDR0A",
   "view": {
     "type": "modal",
-    "callback_id": "modal-identifier",
+    "callback_id": "modal_status_update",
     "title": {
       "type": "plain_text",
       "text": "Add Notes"
     },
-    "blocks": [
-      {
-        "type": "section",
-        "text": {
-          "type": "mrkdwn",
-          "text": "It's Block Kit...but _in a modal_"
-        },
-        "block_id": "section1",
-        "accessory": {
-          "type": "button",
-          "text": {
-            "type": "plain_text",
-            "text": "Click me"
-          },
-          "action_id": "button_abc",
-          "value": "Button value",
-          "style": "danger"
-        }
-      },
+    "blocks": [      
       {
         "type": "input",
-        "block_id": "section2",
+        "block_id": "section",
         "label": {
           "type": "plain_text",
           "text": "Note"
         },
         "element": {
           "type": "plain_text_input",
-          "action_id": "input_o1",  
+          "action_id": "input_status_update",
           "placeholder": {
             "type": "plain_text",
             "text": " "
-          },        
+          },
           "multiline": true
         },
         "optional": false
@@ -50,8 +31,8 @@ export const modalPayload = {
       "text": "Cancel"
     },
     "submit": {
-      "type": "plain_text",      
-      "text": "Send"      
+      "type": "plain_text",
+      "text": "Send"
     }
     // "private_metadata": "Shhhhhhhh",
     // "callback_id": "view_identifier_12"
