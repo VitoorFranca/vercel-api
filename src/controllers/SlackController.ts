@@ -17,6 +17,7 @@ export class SlackController {
 
       const result = await this.slackService.openModal(payload.trigger_id);
       //console.log("request: " + result);
+      res.status(400);
       res.status(200).json(result);
     } catch (error) {
       console.log('Error open modal: ' + error )
