@@ -17,9 +17,8 @@ export class SlackController {
 
       res.status(200).json({
         "response_action": "errors",
-        "errors": {
-          "block_id": "section",
-          "text": "Ocorreu um erro ao processar sua interação de bloco."
+        "errors": {          
+          "section": "Ocorreu um erro ao processar sua interação de bloco."
         }
       });
 
