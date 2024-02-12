@@ -16,7 +16,7 @@ export const modalPayload = {
         },
         "element": {
           "type": "plain_text_input",
-          "action_id": "input_status_update",
+          "action_id": "input",
           "placeholder": {
             "type": "plain_text",
             "text": " "
