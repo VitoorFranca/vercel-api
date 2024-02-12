@@ -15,16 +15,9 @@ export class SlackController {
       console.log("payload " + JSON.stringify(payload))
       console.log("payload/trigger_id open modal: " + payload.trigger_id)
 
-      res.status(200).json({
-        "response_action": "errors",
-        "errors": {          
-          "section": "Ocorreu um erro ao processar sua interação de bloco."
-        }
-      });
-
-      //const result = await this.slackService.openModal(payload.trigger_id);
+      const result = await this.slackService.openModal(payload.trigger_id);
       //console.log("request: " + result);
-      //res.status(200).json(result);
+      res.status(200).json(result);
     } catch (error) {
       console.log('Error open modal: ' + error )
       res.status(400).json({ message: 'Error open modal: ' + error });
