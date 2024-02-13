@@ -24,6 +24,24 @@ export const modalPayload = {
           "multiline": true
         },
         "optional": false
+      },
+      {
+        "type": "input",
+        "block_id": "section_teste",
+        "label": {
+          "type": "plain_text",
+          "text": "Note Teste"
+        },
+        "element": {
+          "type": "plain_text_input",
+          "action_id": "input teste",
+          "placeholder": {
+            "type": "plain_text",
+            "text": "teste"
+          },
+          "multiline": true
+        },
+        "optional": false
       }
     ],
     "close": {
